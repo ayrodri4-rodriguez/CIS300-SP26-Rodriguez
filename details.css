@@ -1,21 +1,21 @@
 body {
-        background-color: #3a797c;
-        color: #3a797c;
+        background-color: #020736;
+        color: #E1F2F5;
         font-family: Arial, Helvetica, sans-serif;
         margin: 0;
     }
 #wrapper {
     width: 80%;
     margin: 30px auto;
-    background-color: #fbdda2 ;
-    border: 2px soid #d1601f
+    background-color: #07182B;
+    border: 2px solid #07182B
 }
 header{
     display:flex;
     align-items:center;
     gap: 20px;
     padding: 15px 20px;
-    border-bottom:2px solid #970a12
+    border-bottom:2px solid #80e9f5
 }
 
 
@@ -23,7 +23,7 @@ header{
     width: 75px;
     height: 75px;
     object-fit: cover;
-    border: 1px solid #666;
+
 }
 
 .title h1 {
@@ -33,7 +33,7 @@ header{
 
 .title p {
     margin: 0;
-    font-size: .9 rem;
+    font-size: .9rem;
 }
 
 .tag {
@@ -53,23 +53,22 @@ header{
     align-items: center;
     justify-content: center;
 
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 
-    background-color: #f8edd3;
-    border: 2px solid #970a12;
+    background-color: #07182B;
     border-radius: 6px;
 
     text-decoration: none;
 }
 .icon-btn img {
-    width: 22px;
-    height: 22px;
+    width: 35px;
+    height: 35px;
     object-fit: contain;
 }
 
 .icon-btn:hover {
-    background-color: #ffdca8;
+    background-color: #335A70;
     transform: translateY(-2px);
     cursor: pointer;
 }
@@ -77,10 +76,14 @@ header{
 
 
   nav {
-    border-bottom: 2px solid #fbdda2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    border-bottom: 2px solid #80e9f5;
     padding: 10px 20px;
-    background-color: #d1601f;
-    text-align: right
+    background-color: #07182B;
    }
 nav ul {
     list-style: none;
@@ -90,7 +93,19 @@ nav ul {
     margin: 0;
     padding: 0;
 }
-
+.navLeft{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+.navRight {
+    list-style: none;
+    display: flex;
+    align-items:center;
+    gap: 25px;
+    margin:0; 
+    padding:0;
+}
 nav a {
     text-decoration: none;
     color: #970a12;
@@ -123,8 +138,8 @@ main {
 .aboutMe {
     flex: 1;
     min-height: 220px;
-    border: 2px solid #670626;
-    background-color: #f8edd3;
+    border: 2px solid #80e9f5;
+    background-color: #0d0230;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -133,9 +148,182 @@ main {
     margin-top: 0;
 }
 
+
+
+
+/*works page set up */
+.pageHeader {
+    margin-bottom: 25px;
+}
+
+.pageHeader h2 {
+    margin: 0 0 10px 0;
+    color: #70A1BD;
+    font-size: 2rem;
+}
+
+.pageHeader p {
+    margin: 0;
+    max-width: 700px;
+}
+
+.projectList {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.projectCard {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border: 2px solid #670626;
+    background-color: #0b2238;
+}
+
+.projectImage {
+    width: 220px;
+    min-height: 150px;
+    background-color: #e8eef1;
+    color: #3a797c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.projectInfo h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #70A1BD;
+}
+
+.projectInfo p {
+    margin-top: 0;
+    line-height: 1.5;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.tech-tags span {
+    background-color: #123a52;
+    color: #9ee7e7;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+
+/*about me page set up */
+
+.meLayout {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+.meCard,
+.contact-card {
+    flex: 1;
+    border: 2px solid #670626;
+    background-color: #0b2238;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.meCard h2,
+.contact-card h2 {
+    margin-top: 0;
+    color: #70A1BD;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    color: #9ed0db;
+}
+
+.contact-form input[type="text"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #70A1BD;
+    background-color: #e1f2f5;
+    color: #07182B;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-form input[type="submit"] {
+    width: fit-content;
+    padding: 10px 18px;
+    border: 2px solid #970a12;
+    background-color: #70A1BD;
+    color: #07182B;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #335A70;
+    color: #ffffff;
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.image-card {
+    flex: 1;
+    border: 2px solid #670626;
+    background-color: #0b2238;
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.image-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border: 2px solid #670626;
+    flex: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 footer {
     text-align: center;
     padding: 10px;
-    border-top: 2px solid #fbdda2;
+    border-top: 2px solid #80e9f5;
     font-size: 0.9rem;
 }
