@@ -53,10 +53,11 @@ header{
     align-items: center;
     justify-content: center;
 
-    width: 30px;
-    height: 30px;
+    width: 33px;
+    height: 33px;
 
-    background-color: #07182B;
+    background-color: #142941;
+    border: 2px solid #970a12;
     border-radius: 6px;
 
     text-decoration: none;
@@ -124,7 +125,7 @@ main {
     display: flex;
     gap: 20px;
 }
-.headshotBox {
+.headshotBox img{
     width: 300px;
     height: 220px;
     border: 2px solid #670626;
@@ -134,6 +135,9 @@ main {
     align-items: center;
     font-weight: bold;
 }
+
+
+/*index page */
 
 .aboutMe {
     flex: 1;
@@ -148,6 +152,41 @@ main {
     margin-top: 0;
 }
 
+
+.skillSection {
+    margin-top: 30px;
+    border: 2px solid #970a12;
+    padding: 20px;
+    background-color: #0d0230;
+}
+
+.skillSection h2 {
+    margin-top: 0;
+    color: #70A1BD;
+}
+
+.skillsTable {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+}
+
+.skillsTable th {
+    background-color: #123a52;
+    color: #9ee7e7;
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #970a12;
+}
+
+.skillsTable td {
+    padding: 12px;
+    border: 1px solid #970a12;
+}
+
+.skillsTable tr:hover {
+    background-color: #110f35;
+}
 
 
 
@@ -178,9 +217,11 @@ main {
     gap: 20px;
     padding: 20px;
     border: 2px solid #670626;
-    background-color: #0b2238;
+    background-color: #0d0230;
 }
-
+.projectList :hover {
+    background-color: #0f0d34;
+}
 .projectImage {
     width: 220px;
     min-height: 150px;
@@ -192,6 +233,15 @@ main {
     font-weight: bold;
     flex-shrink: 0;
 }
+
+.projectImage img{
+    width: 100%;
+    height: 150px;
+    object-fit:cover;
+    display:block;
+
+}
+
 
 .projectInfo h3 {
     margin-top: 0;
@@ -210,6 +260,9 @@ main {
     gap: 10px;
     margin-top: 15px;
 }
+.tech-tags :hover {
+    background-color: #123a52;
+}
 
 .tech-tags span {
     background-color: #123a52;
@@ -219,6 +272,69 @@ main {
     font-size: 0.9rem;
     font-weight: bold;
 }
+
+.demo-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.demo-tags a {
+    text-decoration: none;
+}
+.demo-tags span {
+    background-color: #9ee7e7;
+    color: #123a52;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.demo-tags :hover {
+    background-color: #5db3b3;
+}
+
+
+/*demo page set up */
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.demoVideo{
+    border: 2px solid #80e9f5;
+    background-color: #0d0230;
+    min-height: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+ .demoAbout {
+    border: 2px solid #80e9f5;
+    background-color: #0d0230;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+ .demoAbout h2{
+    margin-top: 0;
+    color: #70A1BD;
+ }
+.feature-list {
+    list-style-type: square;
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+.feature-list li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
 
 
 /*about me page set up */
@@ -233,7 +349,7 @@ main {
 .contact-card {
     flex: 1;
     border: 2px solid #670626;
-    background-color: #0b2238;
+    background-color: #0d0230;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -281,31 +397,29 @@ main {
     color: #ffffff;
 }
 
+.left-side{
+    flex: 1;
+}
+
 .image-row {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
-    margin-top: 30px;
+    gap: 15px;
+    margin-top: 20px;
 }
 
 .image-card {
     flex: 1;
     border: 2px solid #670626;
     background-color: #0b2238;
-    display: flex;
-    gap: 15px;
-    margin-top: 20px;
 }
 
 .image-card img {
     width: 100%;
     height: 120px;
     object-fit: cover;
-    border: 2px solid #670626;
-    flex: 1;
+    display: block;
 }
-
-
 
 
 
